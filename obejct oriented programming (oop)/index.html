@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <label for="name">name</label>
+ <input type="text" id="name">
+ <br>
+ <br>
+ <label for="email">email</label>  
+ <input type="text" id="email">
+ <br>
+ <br> 
+ <button type="button" onclick="myfun()">submit</button>
+
+
+</body>
+<script>
+
+
+    function myfun(){
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+
+        class Student{ 
+            s_data(S_name,S_email){
+            document.write(" Name is " + S_name + " Email is " + S_email);
+            }
+        }
+
+        let a = new Student();
+        a.s_data(name,email)
+    }
+</script>
+</html>

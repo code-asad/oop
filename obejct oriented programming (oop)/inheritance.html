@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number1">
+    <br><br>
+    <input type="text" id="number2">
+    <br><br>
+    <button type="submit" onclick="MyFunc()">submit</button>
+</body>
+<script>
+ 
+//   inheritance concept 
+
+    class Parent{
+        bike(){
+            console.log('Father bike method  ');
+        }
+        banglow(){
+            console.log('Father banglow method')
+        }
+    }
+
+    class Child extends Parent{
+     bike(bike,bike_modal){
+        console.log('bike child method' + " " + bike + " " + bike_modal)
+     }
+    }
+
+    var abc = new Child();
+    abc.bike('cd70',2021);
+
+
+
+
+    //functions concept
+
+// function myFunc (){
+//     console.log('Hello')
+// } 
+// myFunc () ;
+
+//arrow function start
+
+// let myFun = () => {
+// document.write('Hello')
+// }
+// myFun();
+
+// MyFunc = () => {
+//     var num_1 = Math.abs(document.querySelector("#number1").value)
+//     var num_2 = Math.abs(document.querySelector("#number2").value)
+
+//   var sum = (num_1 + num_2);                // 1st method
+//   document.write('Sum is ' + " " + (sum))
+
+// document.write('addition is ' + (num_1 + num_2))  //2nd method
+
+// }
+
+
+
+
+
+</script>
+</html>
