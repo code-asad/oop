@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructer</title>
+</head>
+<body>
+  
+</body>
+<script>
+    // class Animal{
+    //     constructor(name,color){
+    //      this.a_name = name ;
+    //      this.a_color = color;
+    //     }
+    //     eat(){
+    //         console.log("Animal name is " + this.a_name + "<br>" + "Animal Color is " + this.a_color);
+    //     }
+    // }
+
+    // class inherit extends Animal{
+    //     child(){
+    //         console.log(" we can also use Constructer properties by inheritance" + this.a_name)
+    //     }
+    // }
+    //  let obj = new Animal("Cow","Black");
+    // // obj.eat();
+
+    // let abc = new inherit();
+    // abc.child();
+
+
+
+
+   // ======= example =========
+
+
+class  Animal{
+    constructor(name,food){
+         this.a_name = name ;
+         this.a_food = food;
+        }
+        eat(){
+            console.log(  this.a_name   +  " "  + "eats" +    " "  + this.a_food);
+        }
+    }
+
+    class reptiles extends Animal{
+        eat(){
+            super.eat()
+            console.log(  this.a_name +  " "   + "eats" + " " +  this.a_food);
+            
+        }
+    }
+
+    let obj = new Animal("Cow","grass");
+    obj.eat();
+    let obj2 = new reptiles("Lizard","flys")
+     obj2.eat();
+
+
+</script>
+</html>

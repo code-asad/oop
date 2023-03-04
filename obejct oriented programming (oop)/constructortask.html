@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        class Car{
+            constructor(name,model,price){
+            this.a_name = name;
+            this.a_model = model;
+            this.a_price = price;
+            }
+            drive(){
+           document.write("Car name is  " +  this.a_name + " " + "Model is " + " " + this.a_model  +  " " +  "Price is  " +  this.a_price + "<br>" )
+            }
+
+            break(){
+
+            }
+        }
+
+        let obj = new Car("Bugatti chiron","2022","400000$");
+        obj.drive();
+        let obj1 = new Car("Ford Charger","2021","60000$");
+        obj1.drive();
+        let obj2 = new Car("Ford Mustang","2012","200000$");
+        obj2.drive();
+        let obj3 = new Car("Nissan GTR ","2022","30000$");
+        obj3.drive(); 
+        let obj4 = new Car("Nissan Skyline","2022","25000$");
+        obj4.drive();
+
+    </Script>
+</body>
+</html>
